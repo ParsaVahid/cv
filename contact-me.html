@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <h2>Contact Me</h2>
+    <form action="process.php" method="GET">
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="firstName" id="fname" placeholder="Input Your First Name">
+        <label for="lname">First Name:</label>
+        <input type="text" name="lastName" id="lname" placeholder="Input Your Last Name"><br><br>
+        <fieldset id="gender" style="width: 490px;">
+            <legend>Select Your Gender:</legend>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+        </fieldset><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" minlength="6" maxlength="12"><br><br>
+        <fieldset id="bithday" style="width: 490px;">
+            <legend>Birthday:</legend>
+            <select name="month" id="month">
+                <option value="month">Month</option>
+                <option value="dec">Dec</option>
+                <option value="may">May</option>
+                <option value="oct">Oct</option>
+                <option value="nov">Nov</option>
+            </select>
+            <select name="day" id="day">
+                <option value="day">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="year" id="year">
+                <option value="year">Year</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+            </select><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" min="1993-01-01" max="2010-12-30">
+        </fieldset><br>
+        
+        <div>
+            <label for="privacy">I agree to the terms and conditions</label>
+            <input type="checkbox" name="privacy" id="privacy" required checked>
+        </div><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
