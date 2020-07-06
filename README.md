@@ -1,2 +1,1 @@
 # cv
-Pure html cv
